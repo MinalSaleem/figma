@@ -3,57 +3,45 @@ import Header from "../components/Header";
 import Image from "next/image";
 
 const chefs = [
-  { name: "Tahmina Rumi", role: "Chef", image: "/chef/1.png" },
-  { name: "Jorina Begum", role: "Chef", image: "/chef/2.png" },
-  { name: "M. Mohammad", role: "Chef", image: "/chef/3.png" },
-  { name: "Munna Kathy", role: "Chef", image: "/chef/4.png" },
-  { name: "Tahmina Rumi", role: "Cook", image: "/chef/5.png" },
-  { name: "Bisnu Devgon", role: "Chef", image: "/chef/6.png" },
-  { name: "Motin Molladst", role: "Chef", image: "/chef/7.png" },
-  { name: "William Rumi", role: "Chef", image: "/chef/8.png" },
-  { name: "Kets William Roy", role: "Chef", image: "/chef/9.png" },
-  { name: "Mahmud Kholil", role: "Chef", image: "/chef/10.png" },
-  { name: "Ataur Rahman", role: "Chef", image: "/chef/11.png" },
-  { name: "Monalisa Holly", role: "Chef", image: "/chef/12.png" },
+  { titles: "Tahmina Rumi", work: "Chef", pic: "/chef/1.png" },
+  { titles: "Jorina Begum", work: "Chef", pic: "/chef/2.png" },
+  { titles: "M. Mohammad", work: "Chef", pic: "/chef/3.png" },
+  { titles: "Munna Kathy", work: "Chef", pic: "/chef/4.png" },
+  { titles: "Tahmina Rumi", work: "Cook", pic: "/chef/5.png" },
+  { titles: "Bisnu Devgon", work: "Chef", pic: "/chef/6.png" },
+  { titles: "Motin Molladst", work: "Chef", pic: "/chef/7.png" },
+  { titles: "William Rumi", work: "Chef", pic: "/chef/8.png" },
+  { titles: "Kets William Roy", work: "Chef", pic: "/chef/9.png" },
+  { titles: "Mahmud Kholil", work: "Chef", pic: "/chef/10.png" },
+  { titles: "Ataur Rahman", work: "Chef", pic: "/chef/11.png" },
+  { titles: "Monalisa Holly", work: "Chef", pic: "/chef/12.png" },
 ];
 
-const MeetShef = () => {
+export default function Chef() {
   return (
     <div>
-        <Header title="Our Chef" route="Chef"/>
+      <Header title="Our Chef" route="Chef"/>
 
-      <div className="my-[120px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-[90px]">
+      <div className="my-32 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mx-24">
       
         {chefs.map((chef, index) => (
-          <div
-            key={index}
-            className={`relative overflow-hidden  shadow-lg bg-white flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl ${
-              index === 6
-                ? "border-4 border-purple-600" // Complete purple border for the 7th box
-                : "border-4 border-transparent hover:border-purple-600" // Hover effect for other boxes
-            }`}
-          >
-            {/* Chef Image */}
-            <div className="flex-1">
+          <div key={index} className="overflow-hidden bg-white flesx flex-col">
+            <div className="flex">
               <Image
-                src={chef.image}
-                alt={chef.name}
+                src={chef.pic}
+                alt={chef.titles}
                 width={300}
                 height={300}
-                className="w-full h-full object-cover"
-              />
+                className="w-full h-full object-cover"/>
             </div>
 
-            {/* Static Information Section Below Image */}
             <div className="p-4 text-center">
-              <h3 className="text-gray-800 font-bold text-lg">{chef.name}</h3>
-              <p className="text-gray-600">{chef.role}</p>
+              <h3 className="text-gray-800 font-bold text-lg">{chef.titles}</h3>
+              <p className="text-gray-600">{chef.work}</p>
             </div>
           </div>
         ))}
       </div>
     </div>
-  );
+  )
 };
-
-export default MeetShef;

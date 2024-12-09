@@ -8,7 +8,7 @@ interface CardProps {
 
 export default function Card({ image, title, description }: CardProps) {
   return (
-    <div className="border rounded-lg overflow-hidden shadow-lg mb-[56px]">
+    <div className=" overflow-hidden mb-[56px]">
       <Image
         src={image}
         alt={title}
@@ -18,8 +18,8 @@ export default function Card({ image, title, description }: CardProps) {
       />
       <div className="p-4">
         <h3 className="text-[#333333] text-2xl font-bold">{title}</h3>
-        <p className="text-[#4F4F4F] mt-2">{description}</p>
-        <button className="bg-[#FF9F0D] text-white w-[172px] h-[52px] py-[14px] px-[32px] mt-4 rounded">
+        <p className="text-[#4F4F4F] mt-2 lg:w-[871px] ">{description}</p>
+        <button className="text-[#FF9F0D] bg-white border border-[#FF9F0D] w-[172px] h-[52px] py-[14px] px-[32px] mt-4 rounded">
           Read More
         </button>
       </div>

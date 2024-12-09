@@ -10,18 +10,16 @@ export default function SignUpPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header title="Sign Up page" route=" sign up" />
-      {/* Signup Form */}
 
       <div className="flex flex-col mx-auto w-full lg:w-[424px] h-[624px] bg-white drop-shadow-xl shadow-red-500 rounded-md p-8 py-16 my-[120px]">
         <h3 className="text-2xl font-bold mb-8 text-start">Sign Up</h3>
         <form>
           <div className="mb-4 relative">
-            {/* Icon */}
+           
             <span className="absolute inset-y-0 left-3 flex items-center text-gray-500">
               <AiOutlineUser />
             </span>
 
-            {/* Input Field */}
             <input
               type="text"
               className="w-full lg:w-[360px] h-[44px] border rounded pl-10 pr-3 py-2 placeholder-gray-500"
@@ -30,12 +28,11 @@ export default function SignUpPage() {
           </div>
 
           <div className="mb-4 relative">
-            {/* Icon */}
+          
             <span className="absolute inset-y-0 left-3 flex items-center text-gray-500">
               <MdOutlineEmail />
             </span>
 
-            {/* Input Field */}
             <input
               type="text"
               className="w-full lg:w-[360px] h-[44px] border rounded pl-10 pr-3 py-2 placeholder-gray-500"
@@ -44,12 +41,11 @@ export default function SignUpPage() {
           </div>
 
           <div className="mb-4 relative">
-            {/* Icon */}
+      
             <span className="absolute inset-y-0 left-3 flex items-center text-gray-500">
               <MdLockOutline />
             </span>
 
-            {/* Input Field */}
             <input
               type="text"
               className="lg:w-[360px] w-full h-[44px] border rounded pl-10 pr-3 py-2 placeholder-gray-500"

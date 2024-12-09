@@ -7,7 +7,6 @@ import { FaWineGlassAlt } from "react-icons/fa";
 import { PiChefHatBold } from "react-icons/pi";
 import { ImSpoonKnife } from "react-icons/im";
 import { LuPizza } from "react-icons/lu";
-import main1 from "@/../../public/home/main1.png";
 
 export default function Homepage() {
   const images = [
@@ -24,13 +23,12 @@ export default function Homepage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/home/background1.png')", // Background image path
+            backgroundImage: "url('/home/background1.png')",
           }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-70">
-            <section className="px-3 md:px-[80px] lg:px-[135px] flex flex-col justify-evenly md:flex-row md:items-center py-[50px]">
-              {/* Heading */}
-              <div className="text-white w-full md:w-[50%]">
+          <div className="absolute inset-0 bg-black bg-opacity-70 ">
+            <section className="px-3 md:px-[80px] lg:px-[135px] flex flex-col justify-evenly md:flex-row md:items-center py-[50px] lg:mt-[120px]">
+              <div className="text-white w-full md:w-[50%] ">
                 <h1 className="text-[20px] md:text-[28px] lg:text-[32px] font-normal text-[#FF9F0D] whitespace-nowrap text-center md:text-left">
                   Its Quick & Amusing!
                 </h1>
@@ -52,11 +50,12 @@ export default function Homepage() {
                 </div>
               </div>
 
-              {/* Image */}
               <div className="mt-[30px] md:mt-0 md:w-[50%] flex justify-center">
                 <Image
-                  src={main1}
+                  src="/home/main1.png"
                   alt="Hero Image"
+                  width={300}
+                  height={300}
                   className="w-[90%] md:w-auto max-w-[300px] md:max-w-full"
                 />
               </div>
@@ -66,13 +65,13 @@ export default function Homepage() {
       </div>
 
       <div className="bg-black">
-        <div className="flex lg:flex-row flex-col w-[1320px] lg:ml-[300px] ml-7 pt-[120px]">
-          <div className="flex flex-col justify-between w-[562px]  h-[562px]">
+        <div className="flex lg:flex-row flex-col w-full lg:w-[1320px] lg:ml-[300px] ml-0 pt-[120px]">
+          <div className="flex flex-col justify-between w-full lg:w-[562px]  h-[562px]">
             <h2 className="text-[#FF9F0D] font-normal text-[32px]">
               Why Choose us
             </h2>
-            <h2 className="flex flex-row font-bold text-5xl whitespace-normal">
-              <p className="text-[#FF9F0D]">Ex</p>ta ordinary taste And
+            <h2 className="flex flex-row font-bold lg:text-5xl text-2xl">
+              <p className="text-[#FF9F0D]">Ex</p>tra ordinary taste And
               Experienced
             </h2>
 
@@ -97,14 +96,13 @@ export default function Homepage() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </li>
             </ul>
-            <button className="bg-[#FF9F0D] w-[190px] h-[60px] rounded-3xl">
+            <button className="bg-[#FF9F0D] w-[190px] h-[60px] rounded-full">
               Read More
             </button>
           </div>
 
-          <div className="flex flex-col lg:w-3/5 space-y-1 lg:space-y-4 lg:mt-0 mt-14">
-            <div className="w-[350px] lg:w-[660px] h-[330px]">
-              {" "}
+          <div className="flex flex-col lg:w-3/5 space-y-0 lg:space-y-4 lg:my-0 my-1 ">
+            <div className="w-[350px] lg:w-[660px] h-[330px] my-1 ">
               <Image
                 src="/home/about1.png"
                 alt="Food"
@@ -112,9 +110,8 @@ export default function Homepage() {
                 height={200}
               />
             </div>
-            <div className="flex lg:flex-row flex-col space-x-4">
+            <div className="flex lg:flex-row flex-col space-x-0 lg:space-x-4">
               <div className="w-[350px] lg:w-[322px] h-[194px]">
-                {" "}
                 <Image
                   src="/home/about2.png"
                   alt="Food"
@@ -123,7 +120,6 @@ export default function Homepage() {
                 />
               </div>
               <div>
-                {" "}
                 <Image
                   src="/home/about3.png"
                   alt="Food"
@@ -135,18 +131,18 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center w-[350px] lg:w-[1320px] lg:ml-[200px] ml-7 mt-[120px]">
+        <div className="flex flex-col justify-center items-center w-[350px] lg:w-[1320px] lg:ml-[200px] ml-3 mt-[120px]">
           <div>
             <h2 className="text-[#FF9F0D] font-normal text-[32px]">
               Food Categary
             </h2>
           </div>
           <div className="flex flex-row my-14">
-            <p className="text-[#FF9F0D] font-bold text-5xl">C</p>
-            <p className="font-bold text-5xl">hoose Food Item</p>
+            <p className="text-[#FF9F0D] font-bold text-3xl lg:text-5xl">Ch</p>
+            <p className="font-bold text-3xl lg:text-5xl">oose Food Item</p>
           </div>
 
-          <div className="lg:flex lg:flex-row lg:justify-between grid lg:grid-rows-2 grid- grid-flow-col gap-2 w-auto h-auto lg:h-[382px] lg:gap-9">
+          <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-10 content-around px-5">
             <div className="lg:w-[300px]">
               <Image
                 src="/home/food1.png"
@@ -182,7 +178,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col w-[350px] lg:w-[1320px] lg:ml-[300px] ml-7 mt-[120px] py-[120px]">
+        <div className="flex lg:flex-row flex-col-reverse w-[350px] lg:w-[1320px] lg:ml-[300px] ml-3 mt-[120px] py-[120px]">
           <div className="bg-black py-10 px-4">
             <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-4">
               {images.map((image, index) => (
@@ -204,11 +200,11 @@ export default function Homepage() {
             </div>
           </div>
 
-          <div className="flex flex-col  justify-between w-[562px]  h-[562px] lg:space-x-6">
+          <div className="flex flex-col  justify-between w-full lg:w-[562px] h-[562px] lg:space-x-6">
             <h2 className="text-[#FF9F0D] font-normal text-[32px] mt-10 lg:ml-4">
               About us
             </h2>
-            <div className="flex  font-bold text-5xl">
+            <div className="flex  font-bold text-2xl lg:text-5xl">
               <h2 className="text-[#FF9F0D] ">We </h2>
               <h2>Create the best foody product</h2>
             </div>
@@ -250,10 +246,7 @@ export default function Homepage() {
               </div>
             </div>
 
-            <div
-              className="bg-white w-[374px] h-[93px] flex flex-row
-         justify-around py-4 rounded-md"
-            >
+            <div className="bg-white w-full lg:w-[374px] h-[93px] flex flex-row justify-around py-4 rounded-md">
               <p className="text-[#FF9F0D] text-5xl font-bold">30+</p>
               <p className="text-black">Years of Experienced</p>
             </div>
@@ -265,55 +258,66 @@ export default function Homepage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/home/background2.png')", // Background image path
+            backgroundImage: "url('/home/background2.png')",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-70">
             <section className="px-3 md:px-[80px] lg:px-[135px] flex flex-col justify-between lg:justify-evenly md:flex-row md:items-center py-[50px]">
-              {/* Heading */}
-              <div className="text-white w-full md:w-[50%]">
-                <div className="flex flex-row justify-between">
-                  <div className="flex flex-col justify-center items-center">
-                    <div className="flex justify-center items-center w-[102px] h-[100px] rounded-md">
+              <div className="text-white w-full md:w-[50%] lg:my-7 my-9">
+                <div className="flex flex-row justify-between ">
+                  <div className="flex flex-col justify-center items-center text-center">
+                    <div className="flex justify-center items-center w-[70px] lg:w-[102px] h-[100px] rounded-md">
                       <PiChefHatBold color="yellow" size={100} />
                     </div>
                     <div>
-                      <p className="font-bold text-[24px]">
+                      <p className="font-semibold text-[14px] lg:font-bold lg:text-[24px]">
                         Professional Chefs
                       </p>
-                      <p className="font-bold text-[24px]">420</p>
+                      <p className="font-semibold text-[14px] lg:font-bold lg:text-[24px]">
+                        420
+                      </p>
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-center items-center">
-                    <div className="flex justify-center items-center w-[102px] h-[100px] rounded-md">
+                  <div className="flex flex-col justify-center items-center text-center">
+                    <div className="flex justify-center items-center w-[70px] lg:w-[102px] h-[100px] rounded-md">
                       <MdFastfood color="yellow" size={100} />
                     </div>
                     <div>
-                      <p className="font-bold text-[24px]">Items Of Food</p>
-                      <p className="font-bold text-[24px]">320</p>
+                      <p className="font-semibold text-[14px] lg:font-bold lg:text-[24px]">
+                        Items Of Food
+                      </p>
+                      <p className="font-semibold text-[14px] lg:font-bold lg:text-[24px]">
+                        320
+                      </p>
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-center items-center">
-                    <div className="flex justify-center items-center w-[102px] h-[100px] rounded-md">
+                  <div className="flex flex-col justify-center items-center text-center">
+                    <div className="flex justify-center items-center w-[70px] lg:w-[102px] h-[100px] rounded-md">
                       <ImSpoonKnife color="yellow" size={100} />
                     </div>
                     <div>
-                      <p className="font-bold text-[24px]">
+                      <p className="font-semibold text-[14px] lg:font-bold lg:text-[24px]">
                         Years Of Experienced
                       </p>
-                      <p className="font-bold text-[24px]">30+</p>
+                      <p className="font-semibold text-[14px] lg:font-bold lg:text-[24px]">
+                        30+
+                      </p>
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-center items-center">
-                    <div className="flex justify-center items-center w-[102px] h-[100px] rounded-md">
+                  <div className="flex flex-col justify-center items-center text-center">
+                    <div className="flex justify-center items-center w-[70px] lg:w-[102px] h-[100px] rounded-md">
                       <LuPizza color="yellow" size={100} />
                     </div>
                     <div>
-                      <p className="font-bold text-[18px]">Happy Customers</p>
-                      <p className="font-bold text-[24px]">220</p>
+                      <p className="font-semibold text-[14px] lg:font-bold lg:text-[24px]">
+                        Happy Customers
+                      </p>
+                      <p className="font-semibold text-[14px] lg:font-bold lg:text-[24px]">
+                        220
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -329,11 +333,11 @@ export default function Homepage() {
             <h2 className="text-[#FF9F0D] font-normal text-[32px]">Chefs</h2>
           </div>
           <div className="flex flex-row my-14">
-            <p className="text-[#FF9F0D] font-bold text-5xl">Me</p>
-            <p className="font-bold text-5xl">et Our Chefs</p>
+            <p className="text-[#FF9F0D] font-bold text-3xl lg:text-5xl">Me</p>
+            <p className="font-bold text-3xl lg:text-5xl">et Our Chefs</p>
           </div>
 
-          <div className="flex lg:flex-row flex-col justify-between space-x-8">
+          <div className="flex lg:flex-row flex-col justify-between space-x-0 lg:space-x-8">
             <div className="w-[312px] h-[391px]">
               <div className="h-[300px] ">
                 <Image src="/home/1.png" alt="chef" width={300} height={250} />
@@ -380,26 +384,22 @@ export default function Homepage() {
 
       <section className="bg-black py-16 px-4">
         <div className="container mx-auto text-center">
-          {/* Heading */}
           <h2 className="text-3xl font-semibold text-white mb-12">
             What our clients are saying
           </h2>
 
-          {/* Testimonial Card */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-8">
             <div className="lg:w-[800px] w-full bg-gray-100 p-6 rounded-lg shadow-lg text-center">
-              {/* Client Image */}
               <div className="flex justify-center">
                 <Image
                   className="rounded-full"
-                  src="/about/5.png" // Replace with your actual image path
+                  src="/about/5.png"
                   alt="Client Image"
                   width={96}
                   height={96}
                 />
               </div>
 
-              {/* Rating */}
               <p className="text-xl font-semibold text-yellow-500 mt-4">99</p>
               <div className="flex justify-center mt-2">
                 <span className="text-yellow-500 text-lg">&#9733;</span>
@@ -409,18 +409,15 @@ export default function Homepage() {
                 <span className="text-gray-300 text-lg">&#9733;</span>
               </div>
 
-              {/* Testimonial Text */}
               <p className="text-gray-600 mt-4 mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 diam pellentesque bibendum non dui volutpat fringilla bibendum.
                 Aenean lacinia neque vel erat varius.
               </p>
 
-              {/* Client Name and Title */}
               <p className="text-lg font-medium text-gray-800">Alamin Hasan</p>
               <p className="text-sm text-gray-500">Food Specialist</p>
 
-              {/* Navigation Dots */}
               <div className="flex justify-center mt-6">
                 <span className="w-3 h-3 bg-yellow-500 rounded-full mx-2"></span>
                 <span className="w-3 h-3 bg-gray-300 rounded-full mx-2"></span>
@@ -431,11 +428,11 @@ export default function Homepage() {
         </div>
       </section>
 
-      <div className="relative w-full lg:h-[558px] h-[668px]">
+      <div className="relative w-full lg:h-[558px] h-[400px]">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/home/background3.png')", // Background image path
+            backgroundImage: "url('/home/background3.png')",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-70">

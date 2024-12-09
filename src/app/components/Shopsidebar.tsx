@@ -3,34 +3,39 @@ import Image from "next/image";
 
 export default function Shopsidebar() {
     return (
-      <aside className="w-full lg:w-[250px] bg-white shadow-lg p-6">
-        {/* Categories */}
+      <aside className="w-full lg:w-[250px] bg-white border border-gray-300 p-6">
+        
         <div className="mb-6">
           <h3 className="font-semibold text-lg mb-4">Category</h3>
           <ul className="space-y-2">
             <li className="flex flex-row">
-              <input type="checkbox" id="burger" />
-              <label htmlFor="burger" className="ml-2 text-gray-600">Burgers</label>
+              <input type="checkbox" />
+              <label htmlFor="burger" className="ml-2 text-gray-600">Sandeiches</label>
             </li>
             <li  className="flex flex-row">
-              <input type="checkbox" id="pizza" />
-              <label htmlFor="pizza" className="ml-2 text-gray-600">Pizza</label>
+              <input type="checkbox" />
+              <label htmlFor="pizza" className="ml-2 text-gray-600">Chicken Chup</label>
             </li>
             <li  className="flex flex-row">
-              <input type="checkbox" id="drinks" />
+              <input type="checkbox" />
               <label htmlFor="drinks" className="ml-2 text-gray-600">Drinks</label>
             </li>
-            {/* Add more categories as needed */}
+            <li className="flex flex-row">
+              <input type="checkbox" />
+              <label htmlFor="burger" className="ml-2 text-gray-600">Burgers</label>
+            </li>
+            <li className="flex flex-row">
+              <input type="checkbox" />
+              <label htmlFor="burger" className="ml-2 text-gray-600">Burgers</label>
+            </li>
+            
           </ul>
         </div>
-  
-        {/* Price Filter */}
+
         <div className="mb-6">
           <h3 className="font-semibold  mb-4">Filter by Price</h3>
-  ==
         </div>
   
-        {/* Latest Products */}
         <div>
           <h3 className="font-semibold text-lg mb-4">Latest Products</h3>
           <ul className="space-y-4">

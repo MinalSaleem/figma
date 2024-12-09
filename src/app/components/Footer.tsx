@@ -3,12 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaRegCopyright } from "react-icons/fa";
 
-
 export default function Footer() {
   return (
     <div>
       <div className="bg-black text-white  space-x-0  lg:space-x-5">
-        <div className="flex flex-col lg:flex-row justify-between px-[140px] py-[120px]">
+        <div className="flex flex-col lg:flex-row justify-between lg:px-[140px] px-3 py-[120px] ">
           <div className="text-white md:w-[50%] w-[100%]">
             <h2 className="text-[20px] md:text-[32px] font-semibold">
               <span className="text-[#FF9F0D]">St</span>ill Need Our Support?
@@ -22,9 +21,8 @@ export default function Footer() {
             <input
               type="text"
               placeholder="Enter Your Email"
-              className="bg-[#FF9F0D] text-white py-[5px] px-[10px] md:py-[10px] md:px-[20px] w-3/5 lg:w-[296px] rounded-md"
-            />
-            <button className="text-[#FF9F0D] bg-white py-[5px] md:py-[10px] px-[10px] md:px-[20px] w-2/5 rounded-md">
+              className="bg-[#FF9F0D] text-white py-[5px] px-[10px] md:py-[10px] md:px-[20px] w-3/5 lg:w-[296px]"/>
+            <button className="text-[#FF9F0D] bg-white py-[5px] md:py-[10px] px-[10px] md:px-[20px] w-2/5">
               Subscribe Now
             </button>
           </div>
